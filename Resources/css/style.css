@@ -37,7 +37,7 @@ section {
 }
 
 .box {
-    padding: 5%;
+    padding: 1%;
 }
 
 /*-----------PARAGRAPH---------*/
@@ -212,4 +212,56 @@ header{
 .main_nav li a:hover,
 .main_nav li a:active{
     border-bottom: 2px solid #e60;
+}
+/*--------------------------------------*/
+/*----------FEATURES------------*/
+/*--------------------------------------*/
+
+.section_features,
+.long_copy {
+    margin-bottom: 30px;
+}
+
+/*--------------------------------------*/
+/*----------MEALS------------*/
+/*--------------------------------------*/
+
+.section_meals {
+    padding: 0;
+
+}
+
+.meals_showcase {
+    width: 100%;
+    list-style: none;
+}
+
+.meals_showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal_photo {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.meal_photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform .5s;
+    opacity: 0.7;
+}
+
+
+.meal_photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+
+
 }
