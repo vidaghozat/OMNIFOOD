@@ -21,6 +21,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /*--------------------------------------*/
 /*-----------REUSABLE COMPONENT---------*/
@@ -265,3 +275,59 @@ header{
 
 
 }
+
+/*--------------------------------------*/
+/*----------HOW IT WORKS------------*/
+/*--------------------------------------*/
+
+ .section_steps {
+    background-color: rgb(243, 242, 242);
+    margin-top: -7%;
+}
+
+
+.steps_box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps_box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app_screen {
+    width: 45%;
+}
+
+.works_step:last-of-type {
+    margin-bottom: 70px;
+
+}
+
+.works_step {
+    margin-bottom: 50px;
+}
+
+.works_step div {
+    color: #e60 ;
+    border: 2px solid #e60;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 130%;
+    margin-right: 25px;
+}
+
+.btn_app img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+
+
+} 
