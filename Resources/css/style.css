@@ -390,6 +390,23 @@ border-bottom: 0;
     line-height: 1.5;
 }
 
+/*--------------------------------------*/
+/*----------TESTIMONIALS------------*/
+/*--------------------------------------*/
+
+.section-testimonials {
+    background-image: url('Resources/css/image/back-customers.jpg');
+
+
+
+}
+
+blockquote {padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
 
 
 
