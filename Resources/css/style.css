@@ -74,6 +74,20 @@ section {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    font-size: 120%;
+    width: 30px;
+    text-align: center;
+    color:#e60 ;
+    margin-right: 10px;
+
+    /* secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
 
 /*----------HEADING------------*/
 
@@ -116,6 +130,24 @@ h2:after {
     width: 200px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+
+/*----------LINKS------------*/
+
+a:link,
+a:visited {
+    color: #e60 ;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+    transition: border-bottom 0.2s , color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 
@@ -324,14 +356,28 @@ header{
     margin-right: 25px;
 }
 
+
+.btn_app:link,
+.btn_app:visited {
+    border: 0;
+}
+
+
 .btn_app img {
     height: 50px;
     width: auto;
     margin-right: 20px;
+    
 } 
 
+.btn_app img a {
+border-bottom: 0;
+}
+
+
+
 /*--------------------------------------*/
-/*----------HOW IT WORKS------------*/
+/*----------CITIES------------*/
 /*--------------------------------------*/
 
 .box img {
@@ -339,4 +385,13 @@ header{
     height: auto;
     margin-bottom: 15px;
 }
+
+.city_feature {
+    line-height: 1.5;
+}
+
+
+
+
+
 
