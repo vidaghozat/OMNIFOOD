@@ -210,6 +210,7 @@ header{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -395,17 +396,41 @@ border-bottom: 0;
 /*--------------------------------------*/
 
 .section-testimonials {
-    background-image: url('Resources/css/image/back-customers.jpg');
-
-
-
+    background-image:linear-gradient(rgba(0, 0, 0, 0.87),rgb(0, 0, 0, 0.87)), url('image/back-customers.jpg');
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
 }
 
-blockquote {padding: 2%;
+blockquote {
+    padding: 2%;
     font-style: italic;
     line-height: 145%;
     position: relative;
     margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3PX;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 55px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 
