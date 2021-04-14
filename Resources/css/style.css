@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
 html {
     background-color:#fff;
     color:#555;
@@ -37,7 +43,7 @@ html {
 /*--------------------------------------*/
 
 .row {
-    width: 1140px;
+    /* width: 1140px; */
     margin: 0 auto;
 
 }
@@ -245,6 +251,7 @@ header{
 
 }
 
+
 .main_nav li a:link,
 .main_nav li a:visited {
     padding: 5px 0;
@@ -337,6 +344,10 @@ header{
 
 .app_screen {
     width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .works_step:last-of-type {
@@ -453,6 +464,7 @@ cite img {
     width: 90%;
     margin-left: 5%;
     box-shadow: 0 2px 2px #efefef;
+    margin-bottom: 20px;
 }
 
 .plan_box div {
@@ -501,13 +513,9 @@ cite img {
 /*---------- FORM ------------*/
 /*--------------------------------------*/
 
-form {
-    font-size: 110%;
-}
 
-
-.contact_form {
-    width: 100%;
+.contact-form {
+    width: 60%;
     margin: 0  auto;
 }
 
@@ -516,17 +524,18 @@ input[type=text],
 input[type=email],
 select,
 textarea {
-    width: 65%;
-    padding: 4px;
+    width: 100%;
+    padding: 7px;
     border-radius: 3px;
-    border: 2px solid #ccc;
-    font-size: 90%;
-    resize: none;
+    border: 1px solid #ccc;
+    /* font-size: 90%;
+    resize: none; */
 }
 
-label {
-    margin-left: 52%;
-}
+ label {
+    /* margin-left: 52%; */
+    margin-top: 15px;
+} 
 
 textarea {
     height: 100px;
@@ -628,6 +637,9 @@ footer p {
     text-align: center;
     margin-top: 30px;
     font-size: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer p:hover {
@@ -636,5 +648,39 @@ footer p:hover {
 
 
 
-
+/*--------------------------------------*/
+/*---------- RESPONSIVE------------*/
+/*--------------------------------------*/
  
+
+/* For Small Devices (Smart Phones)*/
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For Large Devices*/
+@media only screen and (min-width: 768px) {
+    /* For Large Devices (Computers)*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .main_nav a:not(:first-child) {display: none;}
+    .main_nav a {
+      float: right;
+      display: block;
+    }
+  }
